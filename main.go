@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func main() {
@@ -21,4 +22,8 @@ func main() {
 	fmt.Println("Your name is", name)
 	fmt.Println("Your age is", age)
 
+	ageInt, _ := strconv.Atoi(age)
+
+	fmt.Println("Age in number is", ageInt)
+	fmt.Println("DONE with this scanner things! Hurraaaaaaaa.")
 }
